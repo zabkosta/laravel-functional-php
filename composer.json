@@ -1,0 +1,46 @@
+{
+    "name": "zkosta/function-php",
+    "type": "library",
+    "description": "A laravel wrapper for lstrojny/functional-php",    
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zkosta",
+            "email": "zabkosta@gmail.com"
+           
+        }
+    ],
+    "require": {
+         "php": "~7",
+        "lstrojny/functional-php": "~1.6"
+    },
+    "require-dev": {      
+        "phpunit/phpunit": "~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "zkosta\\Functional": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+    "laravel": {
+		
+		 "providers": [
+            "zkosta\\Functional\\FunctionalProvider"
+        ],
+        
+        "aliases": {
+            "Functional": "Functional"
+        }
+    }
+},
+    
+}
