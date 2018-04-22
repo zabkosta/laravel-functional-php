@@ -27,7 +27,7 @@
              ],
         
              "aliases": {
-                 "Functional": "zkosta\\Functional\\Functional"
+                 "Func": "zkosta\\Functional\\FuncFacade"
              }
     }
 }
