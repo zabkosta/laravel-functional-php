@@ -16,18 +16,18 @@
     },
     "autoload": {
         "psr-4": {
-            "zkosta\\Functional\\": "src/"
+            "fwrapper\\Functional\\": "src/"
         }
     },
     "extra": {
         "laravel": {
 		
 		    "providers": [
-                "zkosta\\Functional\\FunctionalProvider"
+                "fwrapper\\Functional\\FunctionalProvider"
              ],
         
              "aliases": {
-                 "Func": "zkosta\\Functional\\FuncFacade"
+                 "HFunc": "fwrapper\\Functional\\FunctionalFacade"
              }
     }
 }

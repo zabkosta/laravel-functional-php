@@ -1,10 +1,10 @@
 <?php
 
-namespace zkosta\Functional;
+namespace fwrapper\Functional;
 
 use Illuminate\Support\Facades\Facade;
 
-class FuncFacade extends Facade
+class FunctionalFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class FuncFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Func';
+        return 'functional';
     }
 }

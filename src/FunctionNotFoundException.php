@@ -1,6 +1,6 @@
 <?php
 
-namespace zkosta\Functional;
+namespace fwrapper\Functional;
 
 use RuntimeException;
 use Throwable;
