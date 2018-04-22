@@ -4,7 +4,7 @@ namespace zkosta\Functional;
 
 use Illuminate\Support\ServiceProvider;
 
-class FunctionalProvider extend ServiceProvider {
+class FunctionalProvider extends ServiceProvider {
 	
 
  /**
