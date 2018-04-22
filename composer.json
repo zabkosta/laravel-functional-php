@@ -1,5 +1,5 @@
 {
-    "name": "zkosta/function-php",
+    "name": "zkosta/laravel-functional-php",
     "type": "library",
     "description": "A laravel wrapper for lstrojny/functional-php",    
     "license": "MIT",
@@ -12,22 +12,22 @@
     ],
     "require": {
          "php": "~7",
-        "lstrojny/functional-php": "~1.6"
+        "lstrojny/functional-php": ">=1.6"
     },
     "autoload": {
         "psr-4": {
-            "zkosta\\Functional\\": "src/"
+            "fwrapper\\Functional\\": "src/"
         }
     },
     "extra": {
         "laravel": {
 		
 		    "providers": [
-                "zkosta\\Functional\\FunctionalProvider"
+                "fwrapper\\Functional\\FunctionalProvider"
              ],
         
              "aliases": {
-                 "Func": "zkosta\\Functional\\FuncFacade"
+                 "HFunc": "fwrapper\\Functional\\FunctionalFacade"
              }
     }
 }
