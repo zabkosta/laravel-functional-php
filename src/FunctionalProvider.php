@@ -3,7 +3,7 @@
 namespace zkosta\Functional;
 
 use Illuminate\Support\ServiceProvider;
-use zkosta\Functional\FunctionalProxy;
+
 
 class FunctionalProvider extends ServiceProvider {
 	
@@ -16,8 +16,8 @@ class FunctionalProvider extends ServiceProvider {
     public function register()
     {
 
-        $this->app->bind('functional', function () {
-            return new FunctionalProxy();
+        $this->app->bind('Func', function () {
+            return $this->app->make('zkosta\Functional\FunctionalProxy');
         });
       
     }
